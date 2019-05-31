@@ -23,6 +23,14 @@ defmodule GeolocationApiWeb.ConnCase do
 
       # The default endpoint for testing
       @endpoint GeolocationApiWeb.Endpoint
+
+      import GeolocationApi.Factory
+
+      alias GeolocationApi.Repo
+      alias GeolocationApiWeb.Router.Helpers, as: Routes
+
+      # The default endpoint for testing
+      @endpoint GeolocationApiWeb.Endpoint
     end
   end
 

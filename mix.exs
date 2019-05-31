@@ -40,9 +40,12 @@ defmodule GeolocationApi.MixProject do
       {:postgrex, ">= 0.0.0"},
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},
+      {:geolocation_handler, path: "vendor/geolocation_handler"},
       {:plug_cowboy, "~> 2.0"},
       {:distillery, "~> 2.0"},
-      {:config_tuples, "~> 0.2.0"}
+      {:config_tuples, "~> 0.2.0"},
+      {:ex_machina, "~> 2.2.2", only: :test},
+      {:faker, "~> 0.12", only: :test}
     ]
   end
 
