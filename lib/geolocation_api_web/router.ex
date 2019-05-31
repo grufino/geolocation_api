@@ -6,11 +6,11 @@ defmodule GeolocationApiWeb.Router do
   end
 
   scope "/", GeolocationApiWeb do
-    pipe_through :api
     get("/", HeartbeatController, :heartbeat)
   end
 
   scope "/api", GeolocationApiWeb do
     pipe_through :api
+    get("/geolocation/:ip_address", GeolocationController, :show)
   end
 end
