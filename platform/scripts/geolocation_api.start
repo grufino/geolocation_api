@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+# Start the server
+/app/geolocation_api/bin/geolocation_api foreground
