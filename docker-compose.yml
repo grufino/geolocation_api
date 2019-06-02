@@ -3,7 +3,11 @@ services:
   geolocation_api:
     build: 
       context: .
-      dockerfile: platform/Dockerfile
+      dockerfile: platform/dev.Dockerfile
+    environment:
+      DB_URL: ecto://postgres:postgres@postgres/postgres
+      PORT: 4000
+      HOST: localhost
     depends_on:
       - postgres
     ports:

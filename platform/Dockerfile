@@ -23,7 +23,6 @@ RUN mix do local.hex --force, local.rebar --force
 RUN mix deps.get
 RUN mix phx.digest
 RUN mix release
-
 # Extract release to /app/export
 RUN RELEASE_DIR=`ls -d /app/geolocation_api/_build/prod/rel/geolocation_api/releases/*/` && \
   tar -xf "$RELEASE_DIR/geolocation_api.tar.gz" -C /app/export
@@ -32,11 +31,6 @@ RUN RELEASE_DIR=`ls -d /app/geolocation_api/_build/prod/rel/geolocation_api/rele
 # Step 3. Create a lighter weight geolocation_api Image (FINAL IMAGE)
 ####################################
 FROM debian:stretch-slim
-
-# Build arguments
-ARG GIT_REVISION=""
-ENV GIT_REVISION ${GIT_REVISION}
-ENV RELEASE_TAG ${GIT_REVISION}
 
 # Install dependencies
 RUN apt update -q && apt install -yq \
@@ -63,7 +57,6 @@ COPY --from=builder --chown=default:default /app/export /app/geolocation_api
 COPY --chown=default:default ./platform/scripts/geolocation_api.start /app/geolocation_api.start
 RUN chmod +x /app/geolocation_api.start
 
-# Run as default and expose 4001
 USER default
-EXPOSE 4001
+
 CMD ["/app/geolocation_api.start"]
