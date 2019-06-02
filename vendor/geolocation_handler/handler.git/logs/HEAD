@@ -1,0 +1,17 @@
+0000000000000000000000000000000000000000 e0e05a9f4b4d54bc0aefa69cd2efd800d7124326 Gabriel Rufino <gabriel@johan-sports.com> 1559154895 +0200	commit (initial): project creation
+e0e05a9f4b4d54bc0aefa69cd2efd800d7124326 c2da0667f03de2c8dea79fe842da0fe68a25af26 Gabriel Rufino <gabriel@johan-sports.com> 1559212418 +0200	commit: create schema for data structure
+c2da0667f03de2c8dea79fe842da0fe68a25af26 8fbfec5e272500d5efbaf9980584252dbfee5787 Gabriel Rufino <gabriel@johan-sports.com> 1559214950 +0200	commit: create file loader and correct atom list in geolocation schema
+8fbfec5e272500d5efbaf9980584252dbfee5787 e9b5afd7489ade1e4824bb2ba90dbebee5192444 Gabriel Rufino <gabriel@johan-sports.com> 1559218674 +0200	commit: add csv parser library, create persist layer, create main process module
+e9b5afd7489ade1e4824bb2ba90dbebee5192444 b8f4af0d58ea1317a445ad5e5f99631bd89392a1 Gabriel Rufino <gabriel@johan-sports.com> 1559227333 +0200	commit: naive implementation of persist
+b8f4af0d58ea1317a445ad5e5f99631bd89392a1 eadda4d99fbd1f5fd852cd943c43d849cf5aaa46 Gabriel Rufino <gabriel@johan-sports.com> 1559238150 +0200	commit: validate mystery_value on schema
+eadda4d99fbd1f5fd852cd943c43d849cf5aaa46 8670e641d45ae0774f5087769555c3da95e5dca2 Gabriel Rufino <gabriel@johan-sports.com> 1559238176 +0200	commit: add interface to query data from repo
+8670e641d45ae0774f5087769555c3da95e5dca2 9cf340ab6d4c3c49b6beda294749e553625a1d02 Gabriel Rufino <gabriel@johan-sports.com> 1559238222 +0200	commit: test query building of interface
+9cf340ab6d4c3c49b6beda294749e553625a1d02 344ba6aef3811e376129daa3ca6a350dadf5a494 Gabriel Rufino <gabriel@johan-sports.com> 1559238238 +0200	commit: test schema
+344ba6aef3811e376129daa3ca6a350dadf5a494 f89a2124b8cdc31acfc83bf2a79cee0976cb8d4c Gabriel Rufino <gabriel@johan-sports.com> 1559241004 +0200	commit: adapt error messages to tuples
+f89a2124b8cdc31acfc83bf2a79cee0976cb8d4c 5b69fe3510bd4e32770f7536288e94bc58aaec63 Gabriel Rufino <gabriel@johan-sports.com> 1559241078 +0200	commit: rename modules
+5b69fe3510bd4e32770f7536288e94bc58aaec63 1ec70f14b4b523935c999bf240092edbc84b8265 Gabriel Rufino <gabriel@johan-sports.com> 1559241111 +0200	commit: add tests for whole process with mocks
+1ec70f14b4b523935c999bf240092edbc84b8265 178aed686baff14502d0d996a554e4439acd9181 Gabriel Rufino <gabriel@johan-sports.com> 1559241122 +0200	commit: add README
+178aed686baff14502d0d996a554e4439acd9181 fbdc6e142d1d3fab2e492bcc8eb07d5b0d8525bb Gabriel Rufino <gabriel@johan-sports.com> 1559241477 +0200	commit: add elapsed time metadata
+fbdc6e142d1d3fab2e492bcc8eb07d5b0d8525bb cfd24bd2336e95e9d7113085d836ad121335acb1 Gabriel Rufino <gabriel@johan-sports.com> 1559250913 +0200	commit: polishing and renaming
+cfd24bd2336e95e9d7113085d836ad121335acb1 9303d312bdb4c9f4035f93088a0ac4a35f426b19 Gabriel Rufino <gabriel@johan-sports.com> 1559252789 +0200	commit: update readme, adapt persist_stream chunk payload, remove license
+9303d312bdb4c9f4035f93088a0ac4a35f426b19 214b401b2e7e0f833804cf734544c0564976a5da Gabriel Rufino <gabriel@johan-sports.com> 1559486121 +0200	commit: last adaptations to provide better api and understanding

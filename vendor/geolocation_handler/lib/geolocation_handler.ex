@@ -1,0 +1,2 @@
+defmodule GeolocationHandler do
+end
