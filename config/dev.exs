@@ -3,7 +3,7 @@ use Mix.Config
 # Configure your database
 config :geolocation_api, GeolocationApi.Repo,
   adapter: Ecto.Adapters.Postgres,
-  url: "ecto://postgres:postgres@localhost/postgres",
+  url: System.get_env("DB_URL") || "ecto://postgres:postgres@postgres/postgres",
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
 
@@ -14,7 +14,8 @@ config :geolocation_api, GeolocationApi.Repo,
 # watchers to your application. For example, we use it
 # with webpack to recompile .js and .css sources.
 config :geolocation_api, GeolocationApiWeb.Endpoint,
-  http: [port: 4000],
+  http: [port: System.get_env("PORT") || 4000],
+  url: [host: System.get_env("HOST") || "localhost", port: System.get_env("PORT") || 4000],
   debug_errors: true,
   code_reloader: true,
   check_origin: false,

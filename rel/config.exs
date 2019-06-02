@@ -40,4 +40,10 @@ release :geolocation_api do
       :runtime_tools
     ]
   )
+
+  set(
+    config_providers: [
+      ConfigTuples.Provider
+    ]
+  )
 end
