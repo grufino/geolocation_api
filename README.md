@@ -6,6 +6,7 @@
 
 - All you need to get it up and running in development environment is the command ```docker-compose up``` and also run the migration contained in the project with ```mix ecto.migrate```, of course if you want to see data you will need to populate the table, which can be done through the Geolocation_handler library.
 - It was chosen not to include the command to run the migration in the build setup to give more flexibility in case you are using an already migrated or even corrupted/snapshot database (which I think is a good idea specially for production environments because migrations are risky stuff and should be used explicitly when needed).
+- Easiest way to run unit tests is enter the container after it's up and run ```mix test``` from within.
 
 # Current deploy method via Heroku
 
