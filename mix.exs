@@ -40,7 +40,7 @@ defmodule GeolocationApi.MixProject do
       {:postgrex, ">= 0.0.0"},
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},
-      {:geolocation_handler, path: "vendor/geolocation_handler"},
+      {:geolocation_handler, git: "git://github.com/grufino/geolocation_handler.git"},
       {:plug_cowboy, "~> 2.0"},
       {:distillery, "~> 2.0"},
       {:config_tuples, "~> 0.2.0"},

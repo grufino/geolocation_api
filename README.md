@@ -8,12 +8,6 @@
 - It was chosen not to include the command to run the migration in the build setup to give more flexibility in case you are using an already migrated or even corrupted/snapshot database (which I think is a good idea specially for production environments because migrations are risky stuff and should be used explicitly when needed).
 - Easiest way to run unit tests is enter the container after it's up and run ```mix test``` from within.
 
-# Current deploy method via Heroku
-
-- docker build -t registry.heroku.com/geolocation-api-findhotel/web -f platform/Dockerfile .
-- docker push registry.heroku.com/geolocation-api-findhotel/web
-- heroku container:release -a geolocation-api-findhotel web
-
 # Additional Steps to become production ready:
 
 - Configure CI/CD
